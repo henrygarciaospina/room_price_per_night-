@@ -16,6 +16,10 @@
                 <h3><%= room.title %></h3>
                 <div class="description"><%= room.description.truncate(255) if room.description %></div>
                 <div class="number">
+                  <div class="number-value"><%= room.price_per_night %></div>
+                  <div class="number-label">Precio por noche</div>
+                </div>
+                <div class="number">
                   <div class="number-value"><%= room.beds %></div>
                   <div class="number-label">Camas</div>
                 </div>
